@@ -1,0 +1,10 @@
+numpy
+xarray
+torch
+flake8
+netcdf4
+torchvision
+coverage
+testfixtures
+tqdm
+sklearn

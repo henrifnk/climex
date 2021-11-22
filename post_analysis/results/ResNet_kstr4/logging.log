@@ -1,0 +1,68 @@
+=================================ResNet==================================
+===========Config Dict============
+{'batch_size': 256, 'epochs': 100, 'patience': 7, 'lr': 0.001, 'kernel_size': 4, 'stride': 1, 'padding': 3, 'use_weight': True, 'weights': None, 'n_years_val': 10, 'n_years_test': 10, 'splitting_method': 'random', 'season': None, 'save_test': 'climex/post_analysis/results/ResNet_kstr4/', 'path_to_data': 'climex/data/entire_trainingset/training_database_3hourly.nc', 'model_dir': 'climex/post_analysis/results/ResNet_kstr4/', 'device': device(type='cuda'), 'logger': <climex.models.Logger.LogModel object at 0x7fc48ea53bd0>}
+Random test years: [1966 1998 1905 1977 1933 1994 1974 1915 1900 1930]
+===========Use Weighted loss============
+tensor([0.0698, 0.9520, 0.9782], device='cuda:0')
+===========Start training============
+epoch:0, train_loss:0.970858, valid_loss:0.816321, micro_f1:0.835751, macro_f1:0.360595, weighted_f1:0.860161, accuracy: 0.835751, mcc:0.120158
+epoch:1, train_loss:0.915696, valid_loss:0.772963, micro_f1:0.847557, macro_f1:0.373465, weighted_f1:0.868292, accuracy: 0.847557, mcc:0.157033
+epoch:2, train_loss:0.873749, valid_loss:0.745302, micro_f1:0.843451, macro_f1:0.385247, weighted_f1:0.867325, accuracy: 0.843451, mcc:0.179948
+epoch:3, train_loss:0.834886, valid_loss:0.725113, micro_f1:0.825246, macro_f1:0.408764, weighted_f1:0.859276, accuracy: 0.825246, mcc:0.208076
+epoch:4, train_loss:0.797646, valid_loss:0.699811, micro_f1:0.813646, macro_f1:0.415818, weighted_f1:0.853536, accuracy: 0.813646, mcc:0.222243
+epoch:5, train_loss:0.763203, valid_loss:0.679850, micro_f1:0.802149, macro_f1:0.424386, weighted_f1:0.847592, accuracy: 0.802149, mcc:0.236037
+epoch:6, train_loss:0.730801, valid_loss:0.646113, micro_f1:0.814570, macro_f1:0.442409, weighted_f1:0.856124, accuracy: 0.814570, mcc:0.248211
+epoch:7, train_loss:0.701320, valid_loss:0.633442, micro_f1:0.805605, macro_f1:0.446561, weighted_f1:0.851152, accuracy: 0.805605, mcc:0.255025
+epoch:8, train_loss:0.673740, valid_loss:0.620226, micro_f1:0.800404, macro_f1:0.448006, weighted_f1:0.848321, accuracy: 0.800404, mcc:0.259018
+epoch:9, train_loss:0.648471, valid_loss:0.609998, micro_f1:0.796229, macro_f1:0.449733, weighted_f1:0.846095, accuracy: 0.796229, mcc:0.263890
+epoch:10, train_loss:0.625576, valid_loss:0.597006, micro_f1:0.798693, macro_f1:0.453716, weighted_f1:0.847814, accuracy: 0.798693, mcc:0.267667
+epoch:11, train_loss:0.604194, valid_loss:0.587620, micro_f1:0.798248, macro_f1:0.456795, weighted_f1:0.847816, accuracy: 0.798248, mcc:0.272160
+epoch:12, train_loss:0.585245, valid_loss:0.581091, micro_f1:0.797529, macro_f1:0.456747, weighted_f1:0.847336, accuracy: 0.797529, mcc:0.271426
+epoch:13, train_loss:0.566942, valid_loss:0.572649, micro_f1:0.799411, macro_f1:0.457951, weighted_f1:0.848576, accuracy: 0.799411, mcc:0.271661
+epoch:14, train_loss:0.549382, valid_loss:0.559712, micro_f1:0.809609, macro_f1:0.463218, weighted_f1:0.854981, accuracy: 0.809609, mcc:0.273587
+epoch:15, train_loss:0.534338, valid_loss:0.566709, micro_f1:0.797598, macro_f1:0.458385, weighted_f1:0.847577, accuracy: 0.797598, mcc:0.271858
+epoch:16, train_loss:0.518349, valid_loss:0.556713, micro_f1:0.805502, macro_f1:0.461442, weighted_f1:0.852435, accuracy: 0.805502, mcc:0.272698
+epoch:17, train_loss:0.503286, valid_loss:0.551211, micro_f1:0.809985, macro_f1:0.466170, weighted_f1:0.855263, accuracy: 0.809985, mcc:0.274516
+epoch:18, train_loss:0.489192, valid_loss:0.554059, micro_f1:0.805673, macro_f1:0.465361, weighted_f1:0.852781, accuracy: 0.805673, mcc:0.276867
+epoch:19, train_loss:0.474704, valid_loss:0.548927, micro_f1:0.809574, macro_f1:0.466400, weighted_f1:0.855163, accuracy: 0.809574, mcc:0.276620
+epoch:20, train_loss:0.460901, valid_loss:0.547565, micro_f1:0.811730, macro_f1:0.469508, weighted_f1:0.856562, accuracy: 0.811730, mcc:0.278224
+epoch:21, train_loss:0.448265, valid_loss:0.541679, micro_f1:0.817924, macro_f1:0.473406, weighted_f1:0.860385, accuracy: 0.817924, mcc:0.280166
+epoch:22, train_loss:0.435029, valid_loss:0.541136, micro_f1:0.818984, macro_f1:0.474785, weighted_f1:0.861077, accuracy: 0.818984, mcc:0.281465
+epoch:23, train_loss:0.421553, valid_loss:0.540476, micro_f1:0.820456, macro_f1:0.476583, weighted_f1:0.862072, accuracy: 0.820456, mcc:0.282422
+epoch:24, train_loss:0.409003, valid_loss:0.540122, micro_f1:0.822338, macro_f1:0.477131, weighted_f1:0.863147, accuracy: 0.822338, mcc:0.281949
+epoch:25, train_loss:0.396049, valid_loss:0.539309, micro_f1:0.824357, macro_f1:0.478559, weighted_f1:0.864324, accuracy: 0.824357, mcc:0.282192
+epoch:26, train_loss:0.383120, valid_loss:0.538126, micro_f1:0.827676, macro_f1:0.481460, weighted_f1:0.866419, accuracy: 0.827676, mcc:0.284099
+epoch:27, train_loss:0.370624, valid_loss:0.541235, micro_f1:0.824699, macro_f1:0.479482, weighted_f1:0.864581, accuracy: 0.824699, mcc:0.284220
+epoch:28, train_loss:0.358352, valid_loss:0.534202, micro_f1:0.836230, macro_f1:0.484465, weighted_f1:0.871414, accuracy: 0.836230, mcc:0.283411
+epoch:29, train_loss:0.346506, valid_loss:0.540990, micro_f1:0.829797, macro_f1:0.479286, weighted_f1:0.867442, accuracy: 0.829797, mcc:0.278190
+epoch:30, train_loss:0.334177, valid_loss:0.537666, micro_f1:0.837702, macro_f1:0.485280, weighted_f1:0.872270, accuracy: 0.837702, mcc:0.282584
+epoch:31, train_loss:0.322176, valid_loss:0.541249, micro_f1:0.836025, macro_f1:0.483773, weighted_f1:0.871310, accuracy: 0.836025, mcc:0.280916
+epoch:32, train_loss:0.310366, valid_loss:0.544074, micro_f1:0.836367, macro_f1:0.482701, weighted_f1:0.871279, accuracy: 0.836367, mcc:0.276861
+epoch:33, train_loss:0.299487, valid_loss:0.543593, micro_f1:0.841603, macro_f1:0.485718, weighted_f1:0.874474, accuracy: 0.841603, mcc:0.279451
+epoch:34, train_loss:0.288428, valid_loss:0.546813, micro_f1:0.841295, macro_f1:0.485007, weighted_f1:0.874273, accuracy: 0.841295, mcc:0.278492
+epoch:35, train_loss:0.278025, valid_loss:0.549342, micro_f1:0.843553, macro_f1:0.485368, weighted_f1:0.875503, accuracy: 0.843553, mcc:0.276553
+===========Early stopping============
+===========Total Training Time============
+1626.7332036495209
+=================================Inference Results==================================
+===========Total Inference Time============
+1.9002254009246826
+===========Confusion matrix============
+[[23674  1188  2522]
+ [  245   364   303]
+ [  256    42   606]]
+===========Classification report============
+              precision    recall  f1-score   support
+
+           0       0.98      0.86      0.92     27384
+           1       0.23      0.40      0.29       912
+           2       0.18      0.67      0.28       904
+
+    accuracy                           0.84     29200
+   macro avg       0.46      0.64      0.50     29200
+weighted avg       0.93      0.84      0.88     29200
+
+===========MCC============
+0.33104975644714546
+No handles with labels found to put in legend.
+No handles with labels found to put in legend.

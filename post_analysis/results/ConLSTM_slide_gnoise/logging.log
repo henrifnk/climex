@@ -1,0 +1,57 @@
+=================================ConvLSTM_sliding==================================
+===========Config Dict============
+{'batch_size': 256, 'epochs': 100, 'patience': 7, 'lr': 1e-05, 'use_weight': True, 'weights': None, 'n_years_val': 10, 'n_years_test': 10, 'splitting_method': 'random', 'time_depth': 24, 'target': -1, 'season': None, 'source': -1, 'save_test': 'climex/post_analysis/results/ConLSTM_slide_gnoise/', 'path_to_data': 'climex/data/entire_trainingset/training_database_3hourly.nc', 'model_dir': 'climex/post_analysis/results/ConLSTM_slide_gnoise/', 'device': device(type='cuda'), 'logger': <climex.models.Logger.LogModel object at 0x7f8fc5b07710>}
+Random test years: [1966 1998 1905 1977 1933 1994 1974 1915 1900 1930]
+===========Use Weighted loss============
+tensor([0.0698, 0.9520, 0.9782], device='cuda:0')
+===========Start training============
+epoch:0, train_loss:1.132968, valid_loss:1.037146, micro_f1:0.676038, macro_f1:0.307632, weighted_f1:0.768928, accuracy: 0.676038, mcc:0.177716
+epoch:1, train_loss:1.066681, valid_loss:0.985699, micro_f1:0.793363, macro_f1:0.346211, weighted_f1:0.842044, accuracy: 0.793363, mcc:0.206399
+epoch:2, train_loss:1.004721, valid_loss:0.924106, micro_f1:0.869251, macro_f1:0.476996, weighted_f1:0.889101, accuracy: 0.869251, mcc:0.260889
+epoch:3, train_loss:0.928476, valid_loss:0.862541, micro_f1:0.811411, macro_f1:0.459335, weighted_f1:0.855547, accuracy: 0.811411, mcc:0.259003
+epoch:4, train_loss:0.858976, valid_loss:0.808975, micro_f1:0.798808, macro_f1:0.465892, weighted_f1:0.847717, accuracy: 0.798808, mcc:0.263909
+epoch:5, train_loss:0.802017, valid_loss:0.760172, micro_f1:0.807952, macro_f1:0.478490, weighted_f1:0.853630, accuracy: 0.807952, mcc:0.268242
+epoch:6, train_loss:0.756590, valid_loss:0.732574, micro_f1:0.798706, macro_f1:0.466812, weighted_f1:0.847517, accuracy: 0.798706, mcc:0.257134
+epoch:7, train_loss:0.718838, valid_loss:0.684836, micro_f1:0.830383, macro_f1:0.490201, weighted_f1:0.867339, accuracy: 0.830383, mcc:0.277176
+epoch:8, train_loss:0.685889, valid_loss:0.665819, micro_f1:0.812952, macro_f1:0.477798, weighted_f1:0.856823, accuracy: 0.812952, mcc:0.279772
+epoch:9, train_loss:0.656959, valid_loss:0.650944, micro_f1:0.819801, macro_f1:0.481768, weighted_f1:0.861063, accuracy: 0.819801, mcc:0.270101
+epoch:10, train_loss:0.635648, valid_loss:0.653449, micro_f1:0.784220, macro_f1:0.456309, weighted_f1:0.838213, accuracy: 0.784220, mcc:0.261061
+epoch:11, train_loss:0.616657, valid_loss:0.675346, micro_f1:0.746926, macro_f1:0.441013, weighted_f1:0.813990, accuracy: 0.746926, mcc:0.254305
+epoch:12, train_loss:0.598889, valid_loss:0.611973, micro_f1:0.827026, macro_f1:0.472605, weighted_f1:0.864817, accuracy: 0.827026, mcc:0.268533
+epoch:13, train_loss:0.579543, valid_loss:0.619937, micro_f1:0.799733, macro_f1:0.468560, weighted_f1:0.848550, accuracy: 0.799733, mcc:0.275686
+epoch:14, train_loss:0.564748, valid_loss:0.615068, micro_f1:0.802849, macro_f1:0.462332, weighted_f1:0.849970, accuracy: 0.802849, mcc:0.262350
+epoch:15, train_loss:0.550871, valid_loss:0.618121, micro_f1:0.792644, macro_f1:0.456406, weighted_f1:0.843759, accuracy: 0.792644, mcc:0.261929
+epoch:16, train_loss:0.539846, valid_loss:0.619490, micro_f1:0.806376, macro_f1:0.464698, weighted_f1:0.852275, accuracy: 0.806376, mcc:0.259294
+epoch:17, train_loss:0.529072, valid_loss:0.617149, micro_f1:0.801856, macro_f1:0.457343, weighted_f1:0.849576, accuracy: 0.801856, mcc:0.259229
+epoch:18, train_loss:0.518755, valid_loss:0.628105, micro_f1:0.782199, macro_f1:0.450554, weighted_f1:0.837051, accuracy: 0.782199, mcc:0.259687
+epoch:19, train_loss:0.509253, valid_loss:0.603355, micro_f1:0.833944, macro_f1:0.477267, weighted_f1:0.869323, accuracy: 0.833944, mcc:0.272607
+epoch:20, train_loss:0.501311, valid_loss:0.616321, micro_f1:0.796240, macro_f1:0.460725, weighted_f1:0.845870, accuracy: 0.796240, mcc:0.261989
+epoch:21, train_loss:0.490092, valid_loss:0.626202, micro_f1:0.792062, macro_f1:0.453788, weighted_f1:0.843437, accuracy: 0.792062, mcc:0.261528
+epoch:22, train_loss:0.480693, valid_loss:0.624380, micro_f1:0.801479, macro_f1:0.453530, weighted_f1:0.849006, accuracy: 0.801479, mcc:0.254098
+epoch:23, train_loss:0.473239, valid_loss:0.642365, micro_f1:0.780590, macro_f1:0.448289, weighted_f1:0.836149, accuracy: 0.780590, mcc:0.253949
+epoch:24, train_loss:0.465139, valid_loss:0.620658, micro_f1:0.820280, macro_f1:0.459111, weighted_f1:0.860646, accuracy: 0.820280, mcc:0.256960
+epoch:25, train_loss:0.459349, valid_loss:0.623834, micro_f1:0.824253, macro_f1:0.471229, weighted_f1:0.862910, accuracy: 0.824253, mcc:0.266664
+epoch:26, train_loss:0.450920, valid_loss:0.640217, micro_f1:0.806240, macro_f1:0.466416, weighted_f1:0.852298, accuracy: 0.806240, mcc:0.261709
+===========Early stopping============
+===========Total Training Time============
+23005.03715968132
+=================================Inference Results==================================
+===========Total Inference Time============
+81.96476793289185
+===========Confusion matrix============
+[[22333  1494  3534]
+ [  246   396   270]
+ [  311    96   497]]
+===========Classification report============
+              precision    recall  f1-score   support
+
+           0       0.98      0.82      0.89     27361
+           1       0.20      0.43      0.27       912
+           2       0.12      0.55      0.19       904
+
+    accuracy                           0.80     29177
+   macro avg       0.43      0.60      0.45     29177
+weighted avg       0.92      0.80      0.85     29177
+
+===========MCC============
+0.2602320469610265
