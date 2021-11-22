@@ -59,7 +59,7 @@ As long as it is a private repository, one needs to create a github `token` to i
 https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 
 ```bash
-pip install git+https://${token}@github.com/ZYao720/Climex.git
+pip install git+https://${token}@github.com/henrifnk/climex.git
 ```
 
 
