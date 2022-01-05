@@ -7,7 +7,7 @@
 Created as part of an university project "Innovationlab Big Data Science" at LMU Munich in cooperation with the [ClimEx](https://www.climex-project.org/) at the Department for Geography. The work was supervised by Florian Pfisterer, Maximilian Weigert and Magdalena Mittermeier. 
 
 For citation use: 
->Funk, H., Becker, C., Hofheinz, A., Xi, G., Zhang, Y., Pfisterer, F., Weigert, M., & Mittermeier, M. (forthcoming). Towards an automated classification of Hess & Brezowsky's atmospheric circulation patterns Tief and Trog Mitteleuropa using Deep Learning Methods. In Environmental Informatics: A bogeyman or saviour to achieve the UN Sustainable Development Goals?. Shaker.
+>Funk, H., Becker, C., Hofheinz, A., Xi, G., Zhang, Y., Pfisterer, F., Weigert, M., & Mittermeier, M. Towards an automated classification of Hess & Brezowsky's atmospheric circulation patterns Tief and Trog Mitteleuropa using Deep Learning Methods. In Environmental Informatics: A bogeyman or saviour to achieve the UN Sustainable Development Goals?. Shaker.
 
 
 ## Project
